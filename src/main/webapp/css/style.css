@@ -1,0 +1,40 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('../backdrop.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    background-image: linear-gradient(to right, #56ab2f, #a8e063);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    outline: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}

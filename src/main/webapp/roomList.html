@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Room List</title>
+
+    <link rel="stylesheet" href="css/roomList.css">
+
+    <!-- Google's Icon API-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+<!-- Add your site or application content here -->
+<div class="header">
+    <a href="index.html" class="home-icon"><img id="logo" src="logo.png" alt="Home" /></a>
+    <a href="index.html" class="home-icon"><img id="roomList" src="roomList.png" alt="Room List"/></a>
+</div>
+
+<div class="container">
+    <div class="sidebar">
+        <a href="index.html"><span class="material-symbols-outlined">dashboard</span>Back to main menu</a>
+        <a href="about.html"><span class="material-symbols-outlined">person</span>About the developers</a>
+
+        <button onclick="showCreateRoomInput()">Create Room</button>
+        <input type="text" id="roomNameInput" placeholder="Enter room name" style="display:none;" onkeypress="handleKeyPress(event)"/>
+        <button onclick="createRoom()" id="confirmCreateRoom" style="display:none;">Confirm</button>
+
+        <button onclick="refreshList()" style="margin-top: 20px; background-color: #007BFF;">Refresh Room List</button>
+
+
+    </div>
+
+    <div class="main-content">
+
+        <div class="content-section">
+            <h2>Game Rooms</h2>
+        </div>
+
+        <div class="dashboard-container">
+
+            <div class="table-container">
+                <table id="chatRoomsTable">
+                    <!-- Table Content -->
+                    <thead>
+                    <tr>
+                        <th>List of Game Rooms Available</th>
+                        <th>Click to Join</th>
+                        <th>Click to Remove</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<script src="js/roomList.js"></script>
+</body>
+</html>

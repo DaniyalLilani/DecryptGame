@@ -1,0 +1,56 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.game-over-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 10;
+}
+
+.game-over-message h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s;
+    text-decoration: none;
+
+}
+
+a:hover {
+    background-color: #367c39;
+}
+
+.matrix-rain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: black;
+    overflow: hidden;
+    z-index: -1; /* Ensures it's in the background */
+}
+

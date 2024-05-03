@@ -1,0 +1,76 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('../backdrop.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.about-container {
+    text-align: center;
+    color: white;
+    padding: 50px;
+}
+
+.team-member {
+    margin: 20px auto;
+    background: rgba(0, 0, 0, 0.7); /* semi-transparent black background */
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 400px;
+}
+
+.member-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Circular photos */
+    border: 3px solid #4CAF50; /* Green border */
+    margin: 10px;
+}
+
+h1 {
+    margin-bottom: 50px;
+}
+
+h2 {
+    margin: 10px 0;
+}
+
+.github-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.github-link:hover,
+.github-link:focus {
+    background-color: #555;
+    color: #ddd;
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Change color as needed */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.2s;
+}
+
+.back-button:hover {
+    background-color: #45a049; /* Darker shade for hover effect */
+}
+
+
+
+
+

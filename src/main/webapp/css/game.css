@@ -1,0 +1,177 @@
+/* game.css */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: #282c34; /* Dark background for a cryptography vibe */
+    color: white;
+    height: 100%;
+    background: url('../backdrop.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+img {
+    width: 100px;
+}
+
+#word {
+    width: 300px;
+}
+
+a {
+    display: inline-block;
+    background-color: #d9534f; /* Red background color */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding around the text */
+    text-decoration: none; /* Removes underline from links */
+    border-radius: 5px; /* Rounded corners */
+    font-weight: bold; /* Makes the text bold */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    border: none;
+    margin-right: 20px;
+}
+
+a:hover {
+    background-color: #c9302c; /* Slightly darker red on hover */
+}
+
+#startRound {
+    padding: 12px 25px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.1s ease;
+    left: 45%;
+    position: absolute;
+}
+
+#startRound:hover {
+    background-color: #367c39;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+#startRound:active {
+    background-color: #2e5c2e;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transform: translateY(2px);
+}
+
+.game-main {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.game-left {
+    display: flex;
+    flex-direction: column;
+    width: 50%; /* Adjust as necessary */
+}
+
+.game-header {
+    display: flex;
+    justify-content: space-between; /* This will place the logo and timer on opposite ends */
+    align-items: center; /* This will vertically center the logo and timer */
+    width: 100%; /* Ensure the header spans the full width */
+    padding: 10px; /* Add padding for some space inside the header */
+    box-sizing: border-box; /* This ensures padding doesn't add to the total width */
+}
+
+#chatRoomHeader {
+    display: flex;
+    align-items: center; /* This will vertically center the logo and timer */
+    width: 100%; /* Ensure the header spans the full width */
+    padding: 10px; /* Add padding for some space inside the header */
+    box-sizing: border-box; /* This ensures padding doesn't add to the total width */
+}
+
+
+.game-timer {
+    font-size: 1.5em;
+    background-color: #4CAF50;
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+}
+
+.cipher-display {
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    text-align: center;
+
+}
+
+.messages-display {
+    background-color: rgba(255, 255, 255, 0.05); /* Slight white transparency over the dark background */
+    border: 1px solid #4CAF50;
+    width: 50%; /* Adjust as necessary */
+    height: calc(80vh - 125px);
+    overflow-y: auto; /* Allows scrolling */
+    border-radius: 30px;
+}
+
+.player-input {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #333; /* A dark background for the input area */
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#playerSolution {
+    width: 70%;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.game-interaction-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 20px; /* Add padding on the sides */
+}
+
+#submitSolution {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+#submitSolution:hover {
+    background-color: #367c39;
+}
+
+.score-board {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    order: 1;
+    max-height: 400px; /* Example height */
+    overflow-y: auto; /* Allows scrolling */
+    flex: 1;
+    margin: 20px;
+    text-align: center;
+}
+/* styles.css */
+#player1, #score1, #player2, #score2 {
+    display: inline-block;
+}
+

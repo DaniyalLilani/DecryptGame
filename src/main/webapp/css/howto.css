@@ -1,0 +1,51 @@
+/* how-to-play-styles.css */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: url('../backdrop.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.how-to-play-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8); /* Adjust the opacity as necessary */
+    border-radius: 10px;
+    color: white;
+}
+
+.how-to-play-container h1,
+.how-to-play-container h2 {
+    color: #4CAF50; /* Green color to match your button styles */
+    margin-bottom: 20px;
+}
+
+.how-to-play-container p,
+.how-to-play-container li {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.how-to-play-container ul {
+    list-style: inside; /* Or 'none' if you prefer no bullets */
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #45a049;
+}

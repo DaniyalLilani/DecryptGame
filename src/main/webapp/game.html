@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Decrypt Game</title>
+    <link rel="stylesheet" href="css/game.css">
+
+</head>
+<body>
+<header class="game-header">
+    <img src="logo.png" alt="logo" />
+
+    <img id="word" src="word.png" alt="Decrypt" />
+    <div class="game-timer">
+        <span id="timer">01:00</span>
+    </div>
+
+</header>
+<header id="chatRoomHeader">
+    <h2 id="room">Room-1</h2> <!-- Dynamically update based on selected chat room -->
+    <button onclick="startRound()" id="startRound">Start Round</button>
+</header>
+
+<div class="game-main">
+    <div class="game-left">
+        <section class="cipher-display">
+            <h2>Cipher</h2>
+            <p id="cipherText"></p>
+        </section>
+        <section class="score-board">
+            <h2>Scoreboard</h2>
+            <div id="scores">Player 1: 0 | Player 2: 0</div>
+        </section>
+    </div>
+
+    <section class="messages-display">
+        <h2 align="center">Messages</h2>
+        <div id="messages">
+
+        </div>
+    </section>
+</div>
+<footer class="player-input">
+    <a href="roomList.html">Leave Room</a>
+    <input type="text" id="playerSolution" placeholder="Type your decryption here...">
+    <button id="submitSolution">Submit</button>
+</footer>
+
+<script src="js/game.js"></script>
+</body>
+</html>
